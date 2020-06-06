@@ -2,17 +2,17 @@ var miImage = document.querySelector('img');
 
 miImage.onclick = function () {
     var miSrc = miImage.getAttribute('src');
-    if (miSrc == 'images/mexico.png') {
-      miImage.setAttribute('src','/images/brasil.png');
+    if (miSrc == 'Benja/images/mexico.png') {
+      miImage.setAttribute('src','Benja/images/brasil.png');
   }
     
-else if (miSrc == '/images/brasil.png') {
-      miImage.setAttribute('src','/images/china.png');
+else if (miSrc == 'Benja/images/brasil.png') {
+      miImage.setAttribute('src','Benja/images/china.png');
   }
-else if (miSrc == '/images/china.png') {
+else if (miSrc == 'Benja/images/china.png') {
       miImage.setAttribute('src','/images/argentina.png');
   }  
-else if (miSrc == 'images/argentina.png') {
+else if (miSrc == 'Benja/images/argentina.png') {
       miImage.setAttribute('src','images/alemania.png');
   } 
 else if (miSrc == 'images/alemania.png') {
