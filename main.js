@@ -2,33 +2,33 @@ var miImage = document.querySelector('img');
 
 miImage.onclick = function () {
     var miSrc = miImage.getAttribute('src');
-    if (miSrc == '../web/images/mexico.png') {
-      miImage.setAttribute('src','../web/images/brasil.png');
+    if (miSrc == 'images/mexico.png') {
+      miImage.setAttribute('src','images/brasil.png');
   }
     
-else if (miSrc == '../web/images/brasil.png') {
-      miImage.setAttribute('src','../web/images/china.png');
+else if (miSrc == 'images/brasil.png') {
+      miImage.setAttribute('src','images/china.png');
   }
-else if (miSrc == '../web/images/china.png') {
-      miImage.setAttribute('src','../web/images/argentina.png');
+else if (miSrc == 'images/china.png') {
+      miImage.setAttribute('src','images/argentina.png');
   }  
-else if (miSrc == '../web/images/argentina.png') {
-      miImage.setAttribute('src','../web/images/alemania.png');
+else if (miSrc == 'images/argentina.png') {
+      miImage.setAttribute('src','images/alemania.png');
   } 
-else if (miSrc == '../web/images/alemania.png') {
-      miImage.setAttribute('src','../web/images/estados unidos.png');
+else if (miSrc == 'images/alemania.png') {
+      miImage.setAttribute('src','images/estados unidos.png');
   }   
 
-else if (miSrc == '../web/images/estados unidos.png') {
-      miImage.setAttribute('src','../web/images/uruguay.png');
+else if (miSrc == 'images/estados unidos.png') {
+      miImage.setAttribute('src','images/uruguay.png');
   } 
 
-else if (miSrc == '../web/images/uruguay.png') {
-      miImage.setAttribute('src','../web/images/costarica.png');
+else if (miSrc == 'images/uruguay.png') {
+      miImage.setAttribute('src','images/costarica.png');
   }  
 
 else{
-miImage.setAttribute('src','../web/images/mexico.png');
+miImage.setAttribute('src','images/mexico.png');
 }	 
 	 
 }
@@ -42,7 +42,7 @@ if(!miNombre){
 estableceNombreUusario();
 }else{
     localStorage.setItem('nombre', miNombre);
-    miTitulo.textContent = 'Paises con mas Importaci髇 y exportaci髇: ' + miNombre;
+    miTitulo.textContent = 'Paises con mas Importaci贸n y exportaci贸n: ' + miNombre;
 }
 }
 
@@ -51,7 +51,7 @@ if (!localStorage.getItem('nombre')) {
 }
 else {
     var nombreAlmacenado = localStorage.getItem('nombre');
-    miTitulo.textContent = 'Paises con mas Importaci髇 y exportaci髇: ' + nombreAlmacenado;
+    miTitulo.textContent = 'Paises con mas Importaci贸n y exportaci贸n: ' + nombreAlmacenado;
 }
 miBoton.onclick = function() {
     estableceNombreUsuario();
